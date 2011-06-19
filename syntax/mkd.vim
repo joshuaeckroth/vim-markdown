@@ -73,6 +73,7 @@ syn region mkdCode      start=/\s*``[^`]*/          end=/[^`]*``\s*/
 syn region mkdBlockquote start=/^\s*>/              end=/$/                 contains=mkdLineBreak,mkdLineContinue,@Spell
 syn region mkdCode      start="<pre[^>]*>"         end="</pre>"
 syn region mkdCode      start="<code[^>]*>"        end="</code>"
+syn region mkdCode      start="{% highlight \S* %}" end="{% endhighlight %}"
 
 "HTML headings
 syn region htmlH1       start="^\s*#"                   end="\($\|#\+\)" contains=@Spell
